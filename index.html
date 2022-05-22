@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Winetrekking Madeira</title>
+    <style>
+      .azoresedition {
+        background-image: linear-gradient(108.7deg, rgb(224, 235, 213) 8.1%, rgb(37, 148, 141) 91.2%);
+        max-width: 500px;
+        margin: 20px auto;
+        border-radius: 20px;
+        padding: 15px 40px;
+
+      }
+      h1 {
+        text-align: center;
+        color: #01302c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 10px 0px;
+        font-stretch: semi-condensed;
+        margin: 0 auto;
+        font-weight: 800;
+        max-width: 300px;
+
+      }
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #01302c;
+        border-left: 1px solid #01302c;
+        border-right: 1px solid #01302c;
+        padding: 5px 10px;
+        margin: 10px auto 25px auto;
+        max-width: 160px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 0 auto;
+        border-radius: 10px;
+        border: 1px solid #01302c;
+      }
+      p {
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        text-align-last: center;
+        margin: 15px auto 15px auto;
+        line-height: 1.5;
+        max-width: 300px;
+        vertical-align: middle;
+
+      }
+      .moreinfo {
+        display: block;
+        font-size: 11px;
+        text-align: center;
+        text-decoration: none;
+        color: #97dfd9;
+        max-width: 200px;
+        margin: 0 auto;
+        border: 1px solid #97dfd9;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      a:hover {
+        color: #01302c;
+        transition: all 500ms ease-in-out;
+      }
+      .jointrip {
+        display: block;
+        max-width: 50%;
+      }
+      button {
+        background-color:#01302c;
+        border:1px solid #01302c;
+        display: block;
+        color: #60b4ad;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        padding: 18px 24px;
+        margin: 15px auto;
+        border-radius: 15px;
+        transition: all 300ms ease-in-out;
+        box-shadow: rgb(30, 30, 40, 50) 0px 10px 10px 0px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #60b4ad;
+        color: #01302c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="azoresedition">
+    
+    <span>
+      <h1>
+      Winetrekking Portugal
+    </h1>
+    </span>
+    <h2>
+      Madeira Edition
+    </h2>
+    <img src="https://i.ibb.co/n8kZt49/281752136-468860965037886-5042733207697156661-n.jpg" alt="281752136-468860965037886-5042733207697156661-n" width="300" height="240"/>
+    <p>
+      <strong>Madeira</strong> - The Madeira Islands, which are part of Portugal, are an archipelago of small islands located in the Atlantic Ocean about 350 miles from Morocco. With incredible natural pools carved out of lava rocks, gorgeous cliffs overlooking the ocean, and charming towns, it's no wonder that the Madeira Islands are repeatedly considered the world's top island destination. All the over 450 hiking trails in Madeira, make this island one of the top all-year hiking destinations in Europe with a combination of easy levada walks, forest adventures, coastal routes, and steep mountain treks. This give us the possibility to enjoy a glass of one of toothsome, delicious, regional wines 🍷 in many beautiful and different type of sceneries.
+    </p>
+    <a class="moreinfo" href="https://www.facebook.com/Winetrekkingportugal" target="_blank"> 
+      👉 Find out more on our Facebook Page 👈
+    </a>
+    <br/>
+    <button class="jointrip">Join the trip</button>
+  </div>
+    <script>
+      function clickToJoin() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          prompt("Hi " + name + "! Welcome to Winetrekking 😊! Please provide us with your e-mail address")
+          alert("Thank you! You will receive an e-mail with our trip offer within next 24h. In case of any questions please contact us via our Facebook Page directly.");
+      }
+        else {
+        alert("We are sorry, " + name + " 😥 Only adults of 18 years of age may participate in the event");
+        }
+        }
+      let joinOurTrip = document.querySelector("button");
+      joinOurTrip.addEventListener("click", clickToJoin);
+    </script>
+  </body>
+</html>
